@@ -24,15 +24,20 @@ class Bot {
 
   void display() {
     
+    
+    
+    fill(255,0,0);
+    noFill();
+    noStroke();
+    //ellipse(x,y,3,3);
+    //point(x,y);
+    
+    
     // Stroke color
     stroke(0);
 
-    line(px, py, x, y);
-    
-    fill(255,0,0);
-    noStroke();
-    //ellipse(x,y,5,5);
-    //point(x,y);
+    //line(px, py, x, y);
+    bezier(px,py,px+2,py+2, px-2,py+2,x,y);
     px = x;
     py = y;
   }
@@ -43,15 +48,15 @@ class Bot {
 
     if (choice == 0) {
       //x++;
-      x += 4;
+      x += 8;
     } else if (choice == 1) {
       //x--;
-      x -= 4;
+      x -= 8;
     } else if (choice == 2) {
       //y++;
-      y += 4;
+      y += 8;
     } else {
-      y -= 4;
+      y -= 8;
       //y--;
     }
   }

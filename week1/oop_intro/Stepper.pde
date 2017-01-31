@@ -30,7 +30,5 @@ class Stepper {
         stepSize = width;
       }
     }
-    
-    
   }
 }
